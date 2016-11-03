@@ -26,7 +26,13 @@ export class HeroDetailComponent implements OnInit {
         .then(hero => this.hero = hero);
     });
   }
+
   goBack(): void {
     this.location.back();
+  }
+
+  save(): void {
+    this.heroService.update(this.hero)
+      .then(() => this.goBack());
   }
 }
