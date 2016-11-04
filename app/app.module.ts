@@ -9,13 +9,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 
-import { AppComponent }         from './app.component';
-import { DashboardComponent }   from './dashboard.component';
-import { HeroesComponent }      from './heroes.component';
-import { HeroDetailComponent }  from './hero-detail.component';
-import { HeroSearchComponent }  from './hero-search.component';
+import { AppComponent }         from './components/app/app.component';
+import { DashboardComponent }   from './components/dashboard/dashboard.component';
+import { HeroesComponent }      from './components/heroes/heroes.component';
+import { HeroDetailComponent }  from './components/hero-detail/hero-detail.component';
+import { HeroSearchComponent }  from './components/hero-search/hero-search.component';
 
-import { HeroService }          from './hero.service';
+import { HeroService }          from './services/hero.service';
 
 import './rxjs-extensions';
 
